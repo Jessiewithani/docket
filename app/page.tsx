@@ -1,5 +1,5 @@
 import InputForm from "./components/InputForm";
-import NameCard from "./components/NameCard";
+// import NameCard from "./components/NameCard";
 
 export default function Home() {
   return (
