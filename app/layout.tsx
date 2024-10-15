@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import * as styles from './page.tailwind';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="h-full"
+        className={styles.layoutBodyContainer_tw}
       >
         {children}
       </body>

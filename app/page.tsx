@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import InputForm from "./components/inputForm/InputForm";
 import NameCard from "./components/nameCard/NameCard";
+import * as styles from './page.tailwind';
 
 export interface InputValues {
   firstName: string;
@@ -24,12 +25,9 @@ export default function Home() {
 
   const [savedUserInfo, setSavedUserInfo] = useState<InputValues>(inputValue);
 
-
-  console.log('saved', savedUserInfo)
-
   return (
-    <div className="flex flex-col items-center p-20 bg-gray-50 h-screen">
-      <div className="mb-40">
+    <div className={styles.pageContainer_tw}>
+      <div className={styles.inputContainer_tw}>
         <InputForm inputValue={inputValue} setInputValue={setInputValue} setSavedUserInfo={setSavedUserInfo} />
       </div>
       {savedUserInfo.firstName ? <NameCard savedUserInfo={savedUserInfo} /> : null}
