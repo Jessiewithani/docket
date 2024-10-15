@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-After cloning the repo, please `npm i` to install the dependencies.
+After cloning the repo, please run `npm i` to install the dependencies.
 
 To run the development server:
 
