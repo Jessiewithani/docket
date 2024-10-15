@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). For the styling, I'm using TailwindCSS.
-
 ## Getting Started
 
 After cloning the repo, please run `npm i` to install the dependencies.
@@ -25,6 +23,8 @@ npm run test
 ```
 
 ## Code Sample Explanation
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). For the styling, I used TailwindCSS.
 
 I created a form component called `InputForm`, that requests basic user info. Upon submitting the user information, a component called `NameCard` will display the user info below the form. Usually, the user info would be display on another route/page like `settings` or `profile`.
 
