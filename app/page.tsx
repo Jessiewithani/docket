@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import InputForm from "./components/InputForm";
+import InputForm from "./components/inputForm/InputForm";
 import NameCard from "./components/NameCard";
 
 export interface InputValues {
