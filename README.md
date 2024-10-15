@@ -26,6 +26,8 @@ npm run test
 
 ## Code Sample Explanation
 
-I created a form component called `InputForm`, that requests basic user info. Upon submitting the user information, a component called `NameCard` will display the user info below the form. Usually, the user info would be display on another route like `settings` or `profile`.
+I created a form component called `InputForm`, that requests basic user info. Upon submitting the user information, a component called `NameCard` will display the user info below the form. Usually, the user info would be display on another route/page like `settings` or `profile`.
 
 I created a simple test to start in the `__tests__` folder in the `inputForm.test.tsx` file
+
+**please keep in mind that there is no form validation. I wasn't sure if this was going to be an added on iteration, and also didn't want there to be too much code**
