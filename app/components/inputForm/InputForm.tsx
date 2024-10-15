@@ -36,26 +36,26 @@ const InputForm: React.FC<Props> = ({ inputValue, setInputValue, setSavedUserInf
       <div className={styles.inputFields_tw}>
         <div className={styles.labelInputContainer_tw}>
           <label className={styles.label_tw}>First name</label>
-          <input name="firstName" onChange={handleChange} placeholder="ex: Jessie" className="w-[300px] p-2 border rounded-md" value={inputValue.firstName}/>
+          <input name="firstName" onChange={handleChange} placeholder="ex: Jessie" className="w-[300px] p-2 border rounded-md" value={inputValue?.firstName}/>
         </div>
         <div className={styles.labelInputContainer_tw}>
           <label className={styles.label_tw}>Last name</label>
-          <input name="lastName" onChange={handleChange} placeholder="ex: Le" className="w-[300px] p-2 border rounded-md" value={inputValue.lastName}/>
+          <input name="lastName" onChange={handleChange} placeholder="ex: Le" className="w-[300px] p-2 border rounded-md" value={inputValue?.lastName}/>
         </div>
       </div>
       <div className={styles.inputFields_tw}>
         <div className={styles.labelInputContainer_tw}>
           <label className={styles.label_tw}>Phone number</label>
-          <input name="phoneNumber" onChange={handleChange} placeholder="ex: 720-251-6378" className="w-[300px] p-2 border rounded-md" value={inputValue.phoneNumber}/>
+          <input name="phoneNumber" onChange={handleChange} placeholder="ex: 720-251-6378" className="w-[300px] p-2 border rounded-md" value={inputValue?.phoneNumber}/>
         </div>
         <div className={styles.labelInputContainer_tw}>
           <label className={styles.label_tw}>Birthdate</label>
-          <input name="birthdate" onChange={handleChange} placeholder="ex: 03/02/1990" className="w-[300px] p-2 border rounded-md" value={inputValue.birthdate}/>
+          <input name="birthdate" onChange={handleChange} placeholder="ex: 03/02/1990" className="w-[300px] p-2 border rounded-md" value={inputValue?.birthdate}/>
         </div>
       </div>
       <div className={styles.email_tw}>
         <label className={styles.label_tw}>Email</label>
-        <input name="email" onChange={handleChange} placeholder="ex: jessiethanh.02@gmail.com" className="p-2 border rounded-md w-full" value={inputValue.email}/>
+        <input name="email" onChange={handleChange} placeholder="ex: jessiethanh.02@gmail.com" className="p-2 border rounded-md w-full" value={inputValue?.email}/>
       </div>
       <button className={styles.button_tw} type="submit">Submit</button>
     </form>
