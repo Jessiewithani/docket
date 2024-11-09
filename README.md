@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+After cloning the repo, please run `npm i` to install the dependencies.
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run the test:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm run test
+```
 
-## Learn More
+## Code Sample Explanation
 
-To learn more about Next.js, take a look at the following resources:
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). For the styling, I used TailwindCSS, and for testing, I used `Jest` and `React Testing Library`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I created a form component called `InputForm`, that requests basic user info. Upon submitting the user information, a component called `NameCard` will display the user info below the form. Usually, the user info would be display on another route/page like `settings` or `profile`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I created a simple test to start in the `__tests__` folder in the `inputForm.test.tsx` file
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**please keep in mind that there is no form validation. I wasn't sure if this was going to be an added on iteration, and also didn't want there to be too much code**
